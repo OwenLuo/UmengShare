@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/weixin"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="微信"
+            android:padding="12dp"
+            android:layout_margin="12dp"
+            android:textSize="22sp"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/weixin_circer"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="朋友圈"
+            android:padding="12dp"
+            android:layout_margin="12dp"
+            android:textSize="22sp"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/qq"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="QQ"
+            android:padding="12dp"
+            android:layout_margin="12dp"
+            android:textSize="22sp"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/qq_zone"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="QQ空间"
+            android:padding="12dp"
+            android:layout_margin="12dp"
+            android:textSize="22sp"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sina_weibo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="新浪微博"
+            android:padding="12dp"
+            android:layout_margin="12dp"
+            android:textSize="22sp"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/tenxun_weibo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="腾讯微博"
+            android:padding="12dp"
+            android:layout_margin="12dp"
+            android:textSize="22sp"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="邮箱"
+            android:padding="12dp"
+            android:layout_margin="12dp"
+            android:textSize="22sp"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/sms"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="短信"
+            android:padding="12dp"
+            android:layout_margin="12dp"
+            android:textSize="22sp"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

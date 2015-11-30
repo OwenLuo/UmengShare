@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.luo.umengshare"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    signingConfigs {
+        release {
+            keyAlias 'owen.keystore'
+            keyPassword 'luoxiaowen'
+            storeFile file('owen.keystore')
+            storePassword 'luoxiaowen'
+        }
+        debug {
+            keyAlias 'owen.keystore'
+            keyPassword 'luoxiaowen'
+            storeFile file('owen.keystore')
+            storePassword 'luoxiaowen'
+        }
+    }
+
+    buildTypes {
+        release {
+            shrinkResources false // 移除无用的resource文件
+            zipAlignEnabled true
+            minifyEnabled true
+            debuggable false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+        }
+        debug {
+            minifyEnabled false
+            debuggable true
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.2.0'
+}
