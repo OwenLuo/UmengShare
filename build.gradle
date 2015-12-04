@@ -13,16 +13,12 @@ android {
     }
     signingConfigs {
         release {
-            keyAlias 'owen.keystore'
-            keyPassword 'luoxiaowen'
-            storeFile file('owen.keystore')
-            storePassword 'luoxiaowen'
         }
         debug {
             keyAlias 'owen.keystore'
-            keyPassword 'luoxiaowen'
+            keyPassword ''
             storeFile file('owen.keystore')
-            storePassword 'luoxiaowen'
+            storePassword ''
         }
     }
 
